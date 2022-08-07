@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>each遍历</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //$.each(object,fn(index,value));
+            var myArray=["apple","mango","orange","grapes","banana"];
+            $.each(myArray,function(index, value){
+                console.log(index+'+'+value);
+            });
+
+            // var obj=[
+            //     {FirstName:"A",LastName:"B",Gender:"F"},
+            //     {FirstName:"C",LastName:"D",Gender:"M"},
+            //     {FirstName:"E",LastName:"G",Gender:"F"}
+            //     ];
+
+            // $.each(obj,function(index,value){
+            //     var first_name=value.FirstName;
+            //     var last_name=value.LastName;
+            //     console.log(first_name+" "+last_name);
+            // });
+
+            $("button").click(function(){
+                $("li").each(function(){
+                    alert($(this).text());
+                });
+            });
+
+        });
+    
+</script>
+</head>
+<body>
+    <button>按顺序读出古诗</button>
+    <ul>
+        <li>唧唧复唧唧</li>
+        <li>木兰当户织</li>
+        <li>不闻机杼声</li>
+        <li>但闻木碳烯</li>
+    </ul>
+    <!-- <script>
+        if ($ != undefined) {
+            alert("jquery已经引入成功！")      //弹出框
+            console.log("是的！")            //调试台
+        }
+</script> -->
+</body>
+</html>

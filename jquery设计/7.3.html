@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>自定义插件</title>
+    <script type="text/javascript"  src="jquery.min.js"></script>
+    <script type="text/javascript" src="7.3.js"></script>
+    <style type="text/css">
+        body{font-size:12px}
+        .divFrame{width:260px;border:solid 1px #666}
+        .divFrame .divTitle{
+            padding:5px;background-color:#eee;font-weight:bold}
+        .divFrame .divContent{padding:8px;line-height:1.6em}
+        .divFrame .divContent ul{padding:0px;margin:0px;
+            list-style-type:none}
+        .divFrame .divContent ul li span{margin-right:20px}
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $ ("ul") .focusColor("red");
+        })
+    </script>
+</head>
+<body>
+<div class="divFrame">
+    <div class="divTitle">产品销售情况</div>
+    <div class="divContent">
+        <ul id="u1">
+            <li><span>洗衣机</span><span>1500台</span></li>
+            <li><span>冰箱</span><span>5600台</span></li>
+            <li><span>空调</span><span>4800台</span></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+   

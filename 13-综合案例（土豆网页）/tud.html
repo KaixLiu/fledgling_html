@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .tudou img {
+            width: 100%;
+            height: 100%;
+        }
+        .tudou {
+            position: relative;
+            width: 444px;
+            height: 320px;
+            margin: 30px auto;
+        }
+        .tudou .an a {
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            left: 50%;
+            margin-left: -17px;
+            width: 34px;
+            height: 34px;
+            
+        }
+        .mask {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:rgba(0, 0, 0, .3)url(arr.png) no-repeat center;
+        }
+        .tudou:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tudou">
+        <div class="mask"></div>
+        <img src="tudou.jpg" alt="">
+    </div>
+</body>
+</html>

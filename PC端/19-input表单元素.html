@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H2>文本框与密码框</H2>
+    <form action="xxx.php" method="get">
+        <!--text是文本框,里面可以输入任何文字-->
+        <!--maxlength规定只能输入多少个-->
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="6"> <br/>
+        <!--password是密码狂，输入内容会变***-->
+        密码：<input type="password" name="pwd"> <br/>
+        <!--radio是圆圈选择框-->
+        <!--name是表单的名字 这里性别单选按钮必须有相同的名字-->
+        <!--单选按钮和复选框可以设置checked 属性，当页面打开的时候就可以默认选中这个按钮-->
+        性别：男<input type="radio" name="sex" value="男"> 女<input type="radio" name="sex" value="女"> 人妖<input type="radio" name="sex" value="人妖"> <br/>
+        <!--checkbox是复选框，用户可以多个选择-->
+        爱好：吃饭<input type="checkbox" name="hobby" value="吃饭"> 睡觉<input type="checkbox" name="hobby" value="睡觉"> 打豆豆<input type="checkbox" name="hobby" value="打豆豆" checked="checked"> <br/>
+        <!--点击了提交按钮，可以把表单域form 里面的表单元素 里面的值提交给后台服务器-->
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重置">
+        <!--普通按钮 button-->
+        <input type="button" value="获取短信验证码"><br/>
+        <!--文件域可以上传文件-->
+        上传头像：<input type="file">
+    </form>
+</body>
+</html>

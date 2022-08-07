@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实战一</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            var myArray=["苹果","香蕉","橘子","香梨"];
+            $.each(myArray,function(){
+                document.write(this+ "<br />");
+            });
+            var arr2=[[100,110,120],[200,210,220],[300,310,320]];
+            $.each(arr2,function(index,value){
+                document.write( value[0] + "<br />");
+            });
+            var arr3=[{one:1000,two:2000,three:3000,four:4000}];
+            $.each(arr3,function(index,value){
+                var one_name=value.one;
+                var two_name=value.two;
+                var three_name=value.three;
+                var four_namr=value.four;
+                document.write( one_name+"<br />");
+                document.write( two_name+"<br />");
+                document.write( three_name+"<br />");
+                document.write( four_name+"<br />");
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        //$.map(array,fn(value,index))筛选并修改数组中的值
+        var arr1=[2,3,4,3,4,5,5,2,8,55,42,23,131,31];
+        arr2=$.map(arr1,function(n,i){
+            return n >10 ? n+10 :null;//大于10就加10，否则删除
+        });
+        $("p:eq(0)").text("原数组：" + arr1.join());
+        $("p:eq(1)").text("筛选后：" + arr2.join());
+    });
+    </script>
+</head>
+<body>
+    <p></p><p></p>
+</body>
+</html>

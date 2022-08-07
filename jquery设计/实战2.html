@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"  src="jquery.min.js"></script>
+    <script type="text/javascript" src="sz2.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $ ("#set") .click(function(){
+                $('#sz').set();
+            });
+            $('#clear').click(function(){
+                $('#sz').clear();
+            });
+        })
+    </script>
+</head>
+<body>
+    <input type="button" id="set" value="设置样式">
+    <input type="button" id="clear" value="去除样式">
+    <table id="sz" border="1">
+        
+        <tr>
+            <td>年级</td>
+            <td>一年级</td>
+            <td>二年级</td>
+            <td>三年级</td>
+        </tr>
+        <tr>
+            <td>人数</td>
+            <td>65</td>
+            <td>87</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>排名</td>
+            <td>第1名</td>
+            <td>第2名</td>
+            <td>第3名</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        //grep(array,function(value,index),invert)用于数组元素过滤筛选
+        var Arr =[10,11,12,13,14,15,16,17,18];
+        var Result =$.grep(Arr,function(value){
+            return (value % 2);
+        });//默认是false
+        document.write("原数组："+Arr.join() +"<br />");
+        document.write("过滤数组的奇数：" + Result.join()+"<br />");
+
+        // var arr=[1,8,53,2,5,1,6,5,65,9];
+        // var arr2= $.grep(arr,function(value,index){
+        //     return (value !== 5 && index > 4);
+        // });
+        // document.write("原数组："+arr.join() +"<br />");
+        // document.write("过滤数组：" + arr2.join());
+    });
+    </script>
+</head>
+<body>
+    <p></p><p></p>
+</body>
+</html>

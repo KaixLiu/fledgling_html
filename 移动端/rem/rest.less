@@ -1,0 +1,21 @@
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    // 子元素样式直接写父元素里面
+    a {
+        color: blue;
+        // 伪元素选择器要在前面加&
+        &:hover {
+            color: pink;
+        }
+    }
+}
+.nav {
+    .logo {
+        color: purple;
+    }
+    &::before {
+        content: "";
+    }
+}
